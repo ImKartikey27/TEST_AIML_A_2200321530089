@@ -7,6 +7,24 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #b7a6b3;
 }
+.section{
+    border: 2px solid black;
+    display: flex;
+    padding: 4px;
+}
+.sec1{
+    border: 2px solid black;
+    padding: 4px;
+    width: 20%;
+    height: 50px;
+}
+.sec2{
+    border: 2px solid black;
+    padding: 4px;
+    width: 20%;
+    height: 50px;
+}
+
 .login-container {
     width: 350px;
     padding: 20px 30px;
@@ -44,3 +62,4 @@ button:hover {
 button:focus {
     outline: none;
 }
+
