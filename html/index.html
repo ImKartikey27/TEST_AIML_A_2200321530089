@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+    
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="button" onclick="validateLogin()">Login</button>
+        </form>
+    </div>
+
+    <script>
+
+        const validUsername = 'kartikey_2710';
+        const validPassword = '2200321530089';
+
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === validUsername && password === validPassword) {
+
+                alert('Login successful! Redirecting to Currency Converter Dashboard');
+                window.location.href = 'currency-convertor.html'; 
+            } else {
+                alert('Login failed! Incorrect username or password.');
+            }
+        }
+    </script>
+
+</body>
+</html>
